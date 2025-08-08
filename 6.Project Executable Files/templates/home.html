@@ -1,0 +1,19 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+<section class="hero">
+    <h1>VISUALIZING HOUSING SALES TRENDS AND ITS PRICES</h1>
+</section>
+
+<section class="intro">
+    <h2>Housing Trends</h2>
+    <div class="nav-table">
+        <table>
+            <tr>
+                <td><a href="{{ url_for('home') }}">HOME</a></td>
+                <td><a href="{{ url_for('about') }}">ABOUT</a></td>
+                <td><a href="{{ url_for('dashboard') }}">DASHBOARD</a></td>
+                <td><a href="{{ url_for('story') }}">STORY</a></td>
+            </tr>
+        </table>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,189 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #3498db;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+
+/* Home Page Styles */
+
+.hero {
+    background-color: #3498db;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.nav-table {
+    margin: 2rem 0;
+}
+
+.nav-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.nav-table td a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* About Page Styles */
+
+.about-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.about-content h3 {
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+.about-points p {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.about-points p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: #3498db;
+    border-radius: 50%;
+}
+
+
+/* Dashboard Page Styles */
+
+.dashboard-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-container h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.tableau-embed {
+    margin-top: 1rem;
+}
+
+
+/* Story Page Styles */
+
+.story-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.story-content h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.story-points {
+    margin-top: 1.5rem;
+}
+
+.story-points h3 {
+    color: #3498db;
+    margin-top: 1.5rem;
+}
+
+.story-points ul {
+    margin-left: 1.5rem;
+}
+
+.story-points li {
+    margin-bottom: 0.5rem;
+}

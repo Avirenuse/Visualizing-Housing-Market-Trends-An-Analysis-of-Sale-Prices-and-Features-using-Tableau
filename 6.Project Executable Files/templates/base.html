@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Trends - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">CHI ENERGY</div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}" {% if request.path=='/' %}class="active" {% endif %}>HOME</a></li>
+                <li><a href="{{ url_for('about') }}" {% if request.path=='/about' %}class="active" {% endif %}>ABOUT</a></li>
+                <li><a href="{{ url_for('dashboard') }}" {% if request.path=='/dashboard' %}class="active" {% endif %}>DASHBOARD</a></li>
+                <li><a href="{{ url_for('story') }}" {% if request.path=='/story' %}class="active" {% endif %}>STORY</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Housing Trends Analysis. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
